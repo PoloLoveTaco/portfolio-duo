@@ -2,19 +2,13 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 import PagePhrase from "@/components/PagePhrase";
+import NavBar from "@/components/NavBar";
 
 export default function Home() {
     return (
         <div className={styles.page}>
+            <NavBar />
             <main className={styles.main}>
-                <Image
-                    className = {styles.logo}
-                    src       = "/next.svg"
-                    alt       = "Next.js logo"
-                    width     = {100}
-                    height    = {20}
-                    priority
-                />
                 <div className={styles.intro}>
                     {/* exemple de composant avec props */}
                     <PagePhrase title="home" />
